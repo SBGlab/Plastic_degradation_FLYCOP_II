@@ -1,0 +1,2 @@
+LayoutFileName: /home/iodmc/Documentos/Plastic_degradation_FLYCOP_II/Simulations/Estrategia_2/Simulaciones_glicol_cobra/layout_2.txt
+ModelFileName: /home/iodmc/Documentos/Plastic_degradation_FLYCOP_II/Simulations/Estrategia_2/Simulaciones_glicol_cobra/plasticDegradationEstrategy2-dEG_10.cmd
