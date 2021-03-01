@@ -1,0 +1,30 @@
+SIMULACIONES CON COMETS
+
+CEPA 1 (default): su biomasa incrementa cuando incrementan los valores de uptake de glicol. También parece incrementarse cuando los valores de uptake de la cepa 2 rondan entre 4 y 10.
+
+CEPA 2 (plastic degradation strategy 3): su biomasa parece independiente de la biomasa de la cepa 1 e incrementa con valores superiores de glicol. No obstante, cabe destacar que para valores de uptake de glicol de 0.1 tiene una biomasa significativa de 3,10E-02.
+
+Valores de uptake de glicol iguales y bajos en ambas cepas:
+	* 0.1 (1) y 0.1 (2): valores bajos de biomasa en (1) con 1E-2 y algo elevados con (2) con 3,10E-2
+	* 1 (1) y 1 (2): valores de uptake bajos pero se invierten los valores.  Menor biomasa para (2) y mayor biomasa para (1).
+
+Valores de uptake de glicol iguales y elevados en ambas cepas:
+	* 10 (1) y 10 (2): valores elevados de biomasa para ambas cepas ((1) con 5,1E-2 y (2) con 3.96E-2)
+	* 20 (1) y 20 (2): valores iguales de biomasa, elevados 4,86E-2
+
+Valores de uptake de glicol menores para (1) y mayores para (2):
+	* 0.1 (1) y 10 (2)
+	* 1 (1) y 10 (2): valores de biomasa bastante parecidos y relativamente elevados (3.34E-2 (1) y 3.94E-2 (2))
+	* 4 (1) y 10 (2): valores bastante elevados para ambas cepas (4.64E-2 (1) y 3.96E-2)
+
+Valores de uptake de glicol mayores para (1) y menores para (2):
+	* 10 (1) y 0.1 (2)
+	* 20 (1) y 0.1 (2)
+	En los dos casos de arriba se obtiene el mismo valor 3.10E-2 de biomasa para la cepa 2 (que parece independiente en crecimiento de la cepa 1)
+	Para casos en los que el uptake de glicol de la cepa 2 pasa 1, disminuye drásticamente la biomasa a 1.76E-2
+
+
+CASOS INTERESANTES:
+	* Uptake de glicol de 0.1 para la cepa 2
+	* Ratios 1/10 o 4/10 de uptake de glicol cepa 1/cepa 2 parecen dar valores buenos de biomasa
+
