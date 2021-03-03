@@ -1,0 +1,3 @@
+LayoutFileName: /home/iodmc/Documentos/flycop_scripts/.current_layout
+ModelFileName: ./noPCADeg_tmp.cmd
+ModelFileName: ./default3_tmp.cmd
