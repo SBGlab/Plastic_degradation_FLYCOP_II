@@ -55,7 +55,7 @@ def model_modifications(tpha, model_id, gly=None):
     # Single GEMs parameter modifications
 
     # 1.1.- Establish modifications in model  
-    model1=c.model('/home/iodmc/Documentos/flycop_scripts/plasticDegradationEstrategy3-dPCA.cmd')
+    model1=c.model('/home/iodmc/Documentos/Plastic_degradation_FLYCOP_II/Simulations/Estrategia_3/flycop_scripts/plasticDegradationEstrategy3-dPCA_10.cmd')
     #You can change the bounds of a reaction using the change_bounds(reaction name, lower bound, upper bound) method
     #You can create certain conditions for your simulation
     model1.change_bounds('EX_glycol_e', gly, 0)
@@ -66,7 +66,7 @@ def model_modifications(tpha, model_id, gly=None):
     model1.write_comets_model()
     del(model1)
      # 1.2.- Establish modifications in model 2
-    model2=c.model('/home/iodmc/Documentos/flycop_scripts/defaultModel-3.cmd')
+    model2=c.model('/home/iodmc/Documentos/Plastic_degradation_FLYCOP_II/Simulations/Estrategia_3/flycop_scripts/defaultModel-3-consumoSeparado_10.cmd')
     model2.change_bounds('EX_glycol_e', gly, 0)
     model2.change_bounds('EX_o2_e',-18.5,0)
     model2.change_bounds('EX_34dhbz_e',-5,0)
