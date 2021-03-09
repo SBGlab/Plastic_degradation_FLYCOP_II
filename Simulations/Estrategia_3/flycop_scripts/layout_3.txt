@@ -1,4 +1,4 @@
-model_file	plasticDegradationEstrategy3-dPCA.cmd	defaultModel-3-consumoSeparado.cmd
+model_file	plasticDegradationEstrategy3-dPCA.cmd	defaultModel-3.cmd
 	model_world
 		grid_size	1	1
 		world_media
