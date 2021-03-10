@@ -349,4 +349,23 @@ model_file	plasticDegradationEstrategy3-dPCA.cmd	defaultModel-3.cmd
 	      //
 
 //
-
+parameters
+    maxCycles = 240
+    timeStep=0.1
+    spaceWidth=0.05
+    allowCellOverlap=true
+    deathRate=0
+    pixelScale=100
+    numRunThreads = 8
+    saveslideshow = false
+    writetotalbiomasslog = true
+    totalbiomasslogname = total_biomass_log_template.txt
+    writemedialog = true
+    medialogname = media_log_template.txt
+    writefluxlog = true
+    fluxlogname = flux_log_template.txt
+    uselognametimestamp = false
+    defaultKm = 0.01
+    defaultVmax = 20
+		maxSpaceBiomass = 100
+//
