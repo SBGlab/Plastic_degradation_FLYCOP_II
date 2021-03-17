@@ -31,7 +31,7 @@ import importlib
 
 # Load code of individual run
 sys.path.append('../Scripts')
-import plasticDegradationSimulationEstrategy2
+import plasticDegradationSimulationEstrategy3
 
     
 # Parsing parameters:
