@@ -1,0 +1,6 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.0, 1.7976931348623157E308, 0.0, 1, 0.0,  param_1_biomass1='0.1', param_2_biomass2='0.1', param_3_gly1='-4', param_4_gly2='-10'
+0.6906875459999999, -2.3916551032, 93.37, 1, 0.5909866460000001,  param_1_biomass1='0.1', param_2_biomass2='0.1', param_3_gly1='-4', param_4_gly2='-10'
+13.895825531000003, -2.3945584147, 2793.971, 27, 11.195963531,  param_1_biomass1='0.025', param_2_biomass2='0.015', param_3_gly1='-4', param_4_gly2='-7'
+22.360171411999996, -2.3992628366, 5031.299, 49, 17.460288712,  param_1_biomass1='0.07', param_2_biomass2='0.1', param_3_gly1='-6', param_4_gly2='-15'
+42.88153486399998, -2.3992628366, 48591.302, 49, 32.881683964000004,  param_1_biomass1='0.07', param_2_biomass2='0.1', param_3_gly1='-6', param_4_gly2='-15'

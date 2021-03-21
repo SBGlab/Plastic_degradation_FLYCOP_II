@@ -1,0 +1,6 @@
+seed = 123
+use-instances = false
+runObj = QUALITY
+numberOfRunsLimit = 500
+pcs-file = plasticSimulation_confFLYCOP_params_v2.pcs
+algo = "python3 -W ignore ../Scripts/plasticSimulation_wrapperFLYCOP_v2.py"

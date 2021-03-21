@@ -1,0 +1,100 @@
+16:56:37.380 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3916551032, 0, -1, 0.0
+ 
+16:58:22.320 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3832396166, 0, -1, 0.0
+ 
+16:59:39.200 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3617820597, 0, -1, 0.0
+ 
+17:01:39.816 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3346065545, 0, -1, 0.0
+ 
+17:03:20.270 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3142035677, 0, -1, 0.0
+ 
+17:04:35.321 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3975158079, 0, -1, 0.0
+ 
+17:05:46.033 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3622509237, 0, -1, 0.0
+ 
+17:07:48.948 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -1.2138223812, 0, -1, 0.0
+ 
+17:09:00.169 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3846760879, 0, -1, 0.0
+ 
+17:11:04.928 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -0.10845878679999998, 0, -1, 0.0
+ 
+17:12:35.380 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4052793178, 0, -1, 0.0
+ 
+17:13:43.973 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3472567755, 0, -1, 0.0
+ 
+17:14:55.247 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3846760879, 0, -1, 0.0
+ 
+17:16:29.248 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3992628366, 0, -1, 0.0
+ 
+17:17:32.172 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3693787334, 0, -1, 0.0
+ 
+17:18:37.456 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3464048898, 0, -1, 0.0
+ 
+17:20:24.550 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4052793178, 0, -1, 0.0
+ 
+17:22:01.112 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3958121899, 0, -1, 0.0
+ 
+17:23:13.528 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3622509237, 0, -1, 0.0
+ 
+17:24:21.387 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3614454431, 0, -1, 0.0
+ 
+17:25:44.463 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3494196324, 0, -1, 0.0
+ 
+17:27:36.164 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3832396166, 0, -1, 0.0
+ 
+17:29:22.911 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3142035677, 0, -1, 0.0
+ 
+17:30:31.208 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3342389922, 0, -1, 0.0
+ 
+17:32:25.513 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3195620757, 0, -1, 0.0
+ 
+17:34:08.892 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3600368349, 0, -1, 0.0
+ 
+17:36:47.721 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3195620757, 0, -1, 0.0
+ 
+17:40:13.917 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -1.4523893734, 0, -1, 0.0
+ 
+17:42:38.268 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4052793178, 0, -1, 0.0
+ 
+17:44:25.393 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3614454431, 0, -1, 0.0
+ 
+17:46:51.365 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4052793178, 0, -1, 0.0
+ 
+17:48:44.465 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3628429084, 0, -1, 0.0
+ 
+17:51:10.223 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4052793178, 0, -1, 0.0
+ 
+17:54:29.488 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -1.4523893734, 0, -1, 0.0
+ 
+17:56:53.257 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4052793178, 0, -1, 0.0
+ 
+18:00:00.163 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3080680575, 0, -1, 0.0
+ 
+18:02:23.888 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3958121899, 0, -1, 0.0
+ 
+18:05:48.839 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -1.2138223812, 0, -1, 0.0
+ 
+03:58:31.563 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4052793178, 0, -1, 0.0
+ 
+04:01:50.771 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -0.10845878679999998, 0, -1, 0.0
+ 
+04:05:00.567 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3958121899, 0, -1, 0.0
+ 
+04:07:22.889 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.357415043, 0, -1, 0.0
+ 
+04:10:15.852 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3958121899, 0, -1, 0.0
+ 
+05:07:55.097 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, 0.01757353682999996, 0, -1, 0.0
+ 
+05:11:04.224 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -1.7225419954999999, 0, -1, 0.0
+ 
+05:14:00.100 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -0.03602456920000008, 0, -1, 0.0
+ 
+05:16:55.013 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3038969534, 0, -1, 0.0
+ 
+05:20:06.828 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -0.03602456920000008, 0, -1, 0.0
+ 
+05:21:50.000 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3984772767, 0, -1, 0.0
+ 
+05:24:41.030 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -0.9814160268000001, 0, -1, 0.0
+ 

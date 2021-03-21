@@ -1,0 +1,22 @@
+SIMULACIÓN 3 de 100 cilos
+
+Modificación del archivo .pcs limitando el intake de glicol de cada cepa.
+Cepa 1 --> -0.1 a -6 y Cepa 2 --> -7 a -16
+
+Optimal consortium configuration found:  0.07 0.1 -6 -15
+/home/iodmc/anaconda3/lib/R/bin/exec/R: error while loading shared libraries: libreadline.so.6: cannot open shared object file: No such file or directory
+Modifications of the model done!
+
+Running COMETS simulation ...
+Done!
+computing fitness...
+ Total biomass: 0.460495 infitness cycle 322. Biomass yield=0.177348
+
+Running COMETS simulation ...
+Done!
+computing fitness...
+ Total biomass: 0.460495 infitness cycle 322. Biomass yield=0.177348
+Fitness_function    configuration    fitness    sd    avg.Biomass    avg.Yield    endCycle
+Yield    -15.0,-6.0,0.07,0.1,    3.399263    0.0    0.460495    0.177348    322
+Avg.fitness(sd):    3.3992628366    0.0
+

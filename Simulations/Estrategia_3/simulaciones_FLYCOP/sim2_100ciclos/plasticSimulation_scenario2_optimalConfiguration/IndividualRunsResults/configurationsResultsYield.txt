@@ -1,0 +1,2 @@
+Fitness_function	configuration	fitness	sd	avg.Biomass	avg.Yield	endCycle
+Yield	-15.0,-1.0,0.07,0.07,	3.410987	0.0	0.445797	0.186691	322

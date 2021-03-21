@@ -1,0 +1,22 @@
+SIMULACIÓN 2 de 100 ciclos. 
+
+Archivo .pcs modificado para solo considerar biomasa entre 0.01 y 0.1 (antes 0.0001 y 0.1).
+
+Optimal consortium configuration found:  0.07 0.07 -1 -15
+/home/iodmc/anaconda3/lib/R/bin/exec/R: error while loading shared libraries: libreadline.so.6: cannot open shared object file: No such file or directory
+Modifications of the model done!
+
+Running COMETS simulation ...
+Done!
+computing fitness...
+ Total biomass: 0.445797 infitness cycle 322. Biomass yield=0.186691
+
+Running COMETS simulation ...
+Done!
+computing fitness...
+ Total biomass: 0.445797 infitness cycle 322. Biomass yield=0.186691
+Fitness_function    configuration    fitness    sd    avg.Biomass    avg.Yield    endCycle
+Yield    -15.0,-1.0,0.07,0.07,    3.410987    0.0    0.445797    0.186691    322
+Avg.fitness(sd):    3.4109872041    0.0
+
+
