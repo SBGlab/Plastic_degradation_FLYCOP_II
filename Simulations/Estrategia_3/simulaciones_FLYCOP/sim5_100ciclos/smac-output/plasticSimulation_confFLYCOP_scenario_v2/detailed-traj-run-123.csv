@@ -1,0 +1,7 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Full Configuration","Predicted Performance (if available)",
+"0.0"," 1.7976931348623157E308","0.0","1","0.0", " param_1_biomass1='0.1', param_2_biomass2='0.1', param_3_gly1='-1', param_4_gly2='-15'","NaN"
+"0.7754461460000001"," -2.3916551032","123.9","1","0.6758139460000001", " param_1_biomass1='0.1', param_2_biomass2='0.1', param_3_gly1='-1', param_4_gly2='-15'","NaN"
+"1.503774427"," -2.4109872041","263.313","2","1.304200227", " param_1_biomass1='0.07', param_2_biomass2='0.07', param_3_gly1='-0.8', param_4_gly2='-11'","-2.3916551032000006"
+"5.995222541999999"," -2.4125199971","1344.097","11","4.895420742", " param_1_biomass1='0.08', param_2_biomass2='0.1', param_3_gly1='-1.2', param_4_gly2='-13'","-2.3916551032000006"
+"7.213116297"," -2.4325066818","1624.759","14","5.813247497", " param_1_biomass1='0.08', param_2_biomass2='0.08', param_3_gly1='-1.2', param_4_gly2='-11'","-2.3966347498641074"
+"38.90924163299998"," -2.4325066818","9406.807","14","28.909399533000006", " param_1_biomass1='0.08', param_2_biomass2='0.08', param_3_gly1='-1.2', param_4_gly2='-11'","-2.4325066818"

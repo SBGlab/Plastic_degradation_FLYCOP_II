@@ -1,0 +1,738 @@
+06:27:06.049 [main] INFO  c.u.c.b.a.l.ComplexLoggingOptions - Logging to: /home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities/smac-output/plasticSimulation_confFLYCOP_scenario_v2/log-run123.txt
+06:27:06.061 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Algorithm Execution & Abstraction Toolkit is v2.10.03-master-814 (ebf4c8c913d5) 
+06:27:06.061 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Java Runtime Environment is Java HotSpot(TM) 64-Bit Server VM (15.0.2) 
+06:27:06.061 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of OS is Linux 5.8.0-45-generic (amd64) 
+06:27:06.061 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of Random Forest Library is v1.10.01-master-120 (b68439c2c391) 
+06:27:06.061 [main] INFO  c.u.c.b.a.m.version.VersionTracker - Version of SMAC is v2.10.03-master-778 (3ee628ef9bf2) 
+06:27:06.062 [main] INFO  c.u.c.b.a.m.j.JCommanderHelper - Call String: smac --scenario-file ../Scripts/plasticSimulation_confFLYCOP_scenario_v2.txt --validation false --numberOfRunsLimit 100 --ipc-async-threads 8 
+06:27:06.063 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ********** The next bit of output can be ignored, it is merely useful for debugging **********
+06:27:06.063 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ==========Enviroment Variables===========
+ADDR2LINE=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-addr2line
+AR=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-ar
+AS=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-as
+CC=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc
+CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/iodmc/anaconda3/include
+CLASSPATH=/opt/gurobi911/linux64/lib/gurobi.jar::
+CMAKE_PREFIX_PATH=/home/iodmc/anaconda3:/home/iodmc/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr
+COLORTERM=truecolor
+COMETS_HOME=/home/iodmc/comets
+CONDA_BACKUP_HOST=x86_64-conda_cos6-linux-gnu
+CONDA_BUILD_SYSROOT=/home/iodmc/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot
+CONDA_DEFAULT_ENV=base
+CONDA_EXE=/home/iodmc/anaconda3/bin/conda
+CONDA_PREFIX=/home/iodmc/anaconda3
+CONDA_PROMPT_MODIFIER=(base) 
+CONDA_PYTHON_EXE=/home/iodmc/anaconda3/bin/python
+CONDA_SHLVL=1
+CPP=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cpp
+CPPFLAGS=-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/iodmc/anaconda3/include
+CXX=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++
+CXXFILT=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++filt
+CXXFLAGS=-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/iodmc/anaconda3/include
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+DEBUG_CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/iodmc/anaconda3/include
+DEBUG_CPPFLAGS=-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/iodmc/anaconda3/include
+DEBUG_CXXFLAGS=-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/iodmc/anaconda3/include
+DEBUG_FFLAGS=-fopenmp -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/iodmc/anaconda3/include -fopenmp -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fimplicit-none -fvar-tracking-assignments -ffunction-sections -pipe
+DEBUG_FORTRANFLAGS=-fopenmp -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/iodmc/anaconda3/include -fopenmp -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fimplicit-none -fvar-tracking-assignments -ffunction-sections -pipe
+DISPLAY=:10.0
+EDITOR=nano
+ELFEDIT=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-elfedit
+F77=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-gfortran
+F90=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-gfortran
+F95=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-f95
+FC=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-gfortran
+FFLAGS=-fopenmp -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/iodmc/anaconda3/include
+FORTRANFLAGS=-fopenmp -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/iodmc/anaconda3/include
+GCC=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-gcc
+GCC_AR=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-gcc-ar
+GCC_NM=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-gcc-nm
+GCC_RANLIB=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-gcc-ranlib
+GFORTRAN=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-gfortran
+GJS_DEBUG_OUTPUT=stderr
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GNOME_SHELL_SESSION_MODE=ubuntu
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/ad03f8d7_757d_44e1_80e1_09d63b1caff0
+GNOME_TERMINAL_SERVICE=:1.74
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+GPROF=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-gprof
+GRB_LICENSE_FILE=/opt/gurobi.lic
+GTK_MODULES=gail:atk-bridge
+GUROBI_COMETS_HOME=/opt/gurobi911/linux64
+GUROBI_HOME=/opt/gurobi911
+GXX=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-g++
+HOME=/home/iodmc
+HOST=x86_64-conda_cos6-linux-gnu
+IM_CONFIG_PHASE=1
+INVOCATION_ID=7c965691c66343b781b6666cee0c4267
+JAVA_HOME=/usr/lib/jvm/jdk-15.0.2
+JOURNAL_STREAM=8:33098
+LANG=en_US.UTF-8
+LD=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-ld
+LDFLAGS=-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/iodmc/anaconda3/lib -Wl,-rpath-link,/home/iodmc/anaconda3/lib -L/home/iodmc/anaconda3/lib
+LD_GOLD=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-ld.gold
+LD_LIBRARY_PATH=:/opt/gurobi911/linux64/lib:/home/iodmc/smac-v2.10.03-master-778/lib/native/:/home/iodmc/smac-v2.10.03-master-778/lib/:/home/iodmc/smac-v2.10.03-master-778/
+LESSCLOSE=/bin/lesspipe %s %s
+LESSOPEN=| /bin/lesspipe %s
+LOGNAME=iodmc
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+MANAGERPID=1150
+NM=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-nm
+OBJCOPY=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-objcopy
+OBJDUMP=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-objdump
+OLDPWD=/home/iodmc/Documents/FLYCOP-modif
+PATH=/home/iodmc/anaconda3/bin:/home/iodmc/anaconda3/condabin:/sbin:/bin:/usr/bin:/usr/local/bin:/snap/bin:/opt/gurobi911/linux64/bin:/home/iodmc/comets:/home/iodmc/smac-v2.10.03-master-778
+PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+PWD=/home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities
+QT_ACCESSIBILITY=1
+QT_IM_MODULE=ibus
+RANLIB=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-ranlib
+READELF=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-readelf
+SESSION_MANAGER=local/iodmc-Virtual-Machine:@/tmp/.ICE-unix/1359,unix/iodmc-Virtual-Machine:/tmp/.ICE-unix/1359
+SHELL=/bin/bash
+SHLVL=1
+SIZE=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-size
+SSH_AGENT_PID=1307
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+STRINGS=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-strings
+STRIP=/home/iodmc/anaconda3/bin/x86_64-conda_cos6-linux-gnu-strip
+TERM=xterm-256color
+UID=1000
+USER=iodmc
+VISUAL=nano
+VTE_VERSION=6003
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+XDG_MENU_PREFIX=gnome-
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SESSION_CLASS=user
+XDG_SESSION_TYPE=x11
+XMODIFIERS=@im=ibus
+XRDP_PULSE_SINK_SOCKET=xrdp_chansrv_audio_out_socket_10
+XRDP_PULSE_SOURCE_SOCKET=xrdp_chansrv_audio_in_socket_10
+XRDP_SESSION=1
+XRDP_SOCKET_PATH=/run/xrdp/sockdir
+_CE_CONDA=
+_CE_M=
+_CONDA_PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_x86_64_conda_cos6_linux_gnu
+
+06:27:06.065 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - Hostname:iodmc-Virtual-Machine
+06:27:06.065 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - ==========System Properties==============
+ERRLOG=/home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities/smac-output/plasticSimulation_confFLYCOP_scenario_v2/log-err123.txt
+NUMRUN=123
+OUTPUTDIR=/home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities/smac-output/plasticSimulation_confFLYCOP_scenario_v2
+ROOT-LEVEL=INFO
+RUNLOG=/home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities/smac-output/plasticSimulation_confFLYCOP_scenario_v2/log-run123.txt
+STDOUT-LEVEL=INFO
+WARNLOG=/home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities/smac-output/plasticSimulation_confFLYCOP_scenario_v2/log-warn123.txt
+file.encoding=UTF-8
+file.separator=/
+java.class.path=/home/iodmc/smac-v2.10.03-master-778/conf/:/home/iodmc/smac-v2.10.03-master-778/patches/:/home/iodmc/smac-v2.10.03-master-778/lib/aeatk.jar:/home/iodmc/smac-v2.10.03-master-778/lib/aeatk-src.jar:/home/iodmc/smac-v2.10.03-master-778/lib/commons-collections-3.2.1.jar:/home/iodmc/smac-v2.10.03-master-778/lib/commons-collections-3.2.1-sources.jar:/home/iodmc/smac-v2.10.03-master-778/lib/commons-io-2.1.jar:/home/iodmc/smac-v2.10.03-master-778/lib/commons-math-2.2.jar:/home/iodmc/smac-v2.10.03-master-778/lib/commons-math3-3.3.jar:/home/iodmc/smac-v2.10.03-master-778/lib/DomainInter.jar:/home/iodmc/smac-v2.10.03-master-778/lib/exp4j-0.3.10.jar:/home/iodmc/smac-v2.10.03-master-778/lib/exp4j-0.4.3.BETA-3.jar:/home/iodmc/smac-v2.10.03-master-778/lib/fastrf.jar:/home/iodmc/smac-v2.10.03-master-778/lib/fastrf-src.jar:/home/iodmc/smac-v2.10.03-master-778/lib/guava-14.0.1.jar:/home/iodmc/smac-v2.10.03-master-778/lib/jackson-annotations-2.3.1.jar:/home/iodmc/smac-v2.10.03-master-778/lib/jackson-core-2.3.1.jar:/home/iodmc/smac-v2.10.03-master-778/lib/jackson-databind-2.3.1.jar:/home/iodmc/smac-v2.10.03-master-778/lib/Jama-1.0.2.jar:/home/iodmc/smac-v2.10.03-master-778/lib/jcip-annotations.jar:/home/iodmc/smac-v2.10.03-master-778/lib/jcip-annotations-src.jar:/home/iodmc/smac-v2.10.03-master-778/lib/jcommander.jar:/home/iodmc/smac-v2.10.03-master-778/lib/jmatharray.jar:/home/iodmc/smac-v2.10.03-master-778/lib/logback-access-1.1.2.jar:/home/iodmc/smac-v2.10.03-master-778/lib/logback-classic-1.1.2.jar:/home/iodmc/smac-v2.10.03-master-778/lib/logback-core-1.1.2.jar:/home/iodmc/smac-v2.10.03-master-778/lib/numerics4j-1.3.jar:/home/iodmc/smac-v2.10.03-master-778/lib/opencsv-2.3.jar:/home/iodmc/smac-v2.10.03-master-778/lib/slf4j-api-1.7.5.jar:/home/iodmc/smac-v2.10.03-master-778/lib/smac.jar:/home/iodmc/smac-v2.10.03-master-778/lib/smac-src.jar:/home/iodmc/smac-v2.10.03-master-778/lib/spi-0.2.4.jar:/home/iodmc/smac-v2.10.03-master-778/*.jar:/home/iodmc/smac-v2.10.03-master-778/patches/
+java.class.version=59.0
+java.home=/opt/jdk-15.0.2
+java.io.tmpdir=/tmp
+java.library.path=:/opt/gurobi911/linux64/lib:/home/iodmc/smac-v2.10.03-master-778/lib/native/:/home/iodmc/smac-v2.10.03-master-778/lib/:/home/iodmc/smac-v2.10.03-master-778/:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+java.runtime.name=Java(TM) SE Runtime Environment
+java.runtime.version=15.0.2+7-27
+java.specification.name=Java Platform API Specification
+java.specification.vendor=Oracle Corporation
+java.specification.version=15
+java.vendor=Oracle Corporation
+java.vendor.url=https://java.oracle.com/
+java.vendor.url.bug=https://bugreport.java.com/bugreport/
+java.version=15.0.2
+java.version.date=2021-01-19
+java.vm.compressedOopsMode=32-bit
+java.vm.info=mixed mode, sharing
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=15
+java.vm.vendor=Oracle Corporation
+java.vm.version=15.0.2+7-27
+jdk.debug=release
+line.separator=
+
+logback.configurationFile=ca/ubc/cs/beta/aeatk/logging/complex-logback.xml
+os.arch=amd64
+os.name=Linux
+os.version=5.8.0-45-generic
+path.separator=:
+sun.arch.data.model=64
+sun.boot.library.path=/opt/jdk-15.0.2/lib
+sun.cpu.endian=little
+sun.io.unicode.encoding=UnicodeLittle
+sun.java.command=ca.ubc.cs.beta.aeatk.ant.execscript.Launcher ca.ubc.cs.beta.smac.executors.SMACExecutor --scenario-file ../Scripts/plasticSimulation_confFLYCOP_scenario_v2.txt --validation false --numberOfRunsLimit 100 --ipc-async-threads 8
+sun.java.launcher=SUN_STANDARD
+sun.jnu.encoding=UTF-8
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+user.country=US
+user.dir=/home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities
+user.home=/home/iodmc
+user.language=en
+user.name=iodmc
+user.timezone=America/New_York
+
+06:27:06.068 [main] INFO  c.u.c.b.a.m.j.JCommanderHelper - ==========Configuration Options==========
+[SMACOptions]
+ adaptiveCapping = false
+ alwaysRunInitialConfiguration = false
+ capAddSlack = 1.0
+ capSlack = 1.3
+classicInitModeOpts = [ClassicInitializationProcedureOptions]
+		 initialIncumbentRuns = 1
+
+dciModeOpts = [DoublingCappingInitializationProcedureOptions]
+		 numberOfChallengers = 2
+		 numberOfRunsPerChallenger = 2
+
+ucip = [UnbiasChallengerInitializationProcedureOptions]
+		 numberOfChallengers = 2
+		 numberOfRunsPerChallenger = 2
+		 cpulimit = 0
+
+ deterministicInstanceOrdering = false
+ doValidation = false
+ execMode = SMAC
+ experimentDir = /home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities/
+ expFunc = null
+help = [HelpOptions]
+		 showHiddenParameters = false
+		 showHelp = false
+		 helpLevel = BASIC
+		 showVersion = false
+		 helpDefaults = /home/iodmc/.aeatk/help.opt
+
+ initialChallengeRuns = 1
+ initialIncumbent = DEFAULT
+ initializationMode = CLASSIC
+ intensificationPercentage = 0.5
+ initialChallengers = []
+ initialChallengersIntensificationTime = 2147483647
+ iterativeCappingBreakOnFirstCompletion = false
+ iterativeCappingK = 1
+logOptions = [ComplexLoggingOptions]
+		 consoleLogLevel = INFO
+		 logLevel = INFO
+
+ maxIncumbentRuns = 2000
+mbOptions = [ModelBuildingOptions]
+		 maskCensoredDataAsKappaMax = false
+		 maskInactiveConditionalParametersAsDefaultValue = true
+		 maskCensoredDataAsUncensored = false
+		 imputationIterations = 2
+
+ modelHashCodeFile = null
+ numberOfChallengers = 10
+ numberOfRandomConfigsInEI = 10000
+ numberOfRandomConfigsUsedForLocalSearch = 0
+ numPCA = 7
+ optionFile = null
+ optionFile2 = null
+randomForestOptions = [RandomForestOptions]
+		 brokenVarianceCalculation = false
+		 freeMemoryPercentageToSubsample = 0.25
+		 fullTreeBootstrap = false
+		 ignoreConditionality = false
+		 imputeMean = false
+		 logModel = false
+		 minVariance = 1.0E-14
+		 numTrees = 10
+		 penalizeImputedValues = false
+		 preprocessMarginal = true
+		 ratioFeatures = 0.8333333333333334
+		 shuffleImputedValues = false
+		 splitMin = 10
+		 storeDataInLeaves = false
+		 subsamplePercentage = 0.9
+		 subsampleValuesWhenLowMemory = false
+
+runGroupOptions = [RunGroupOptions]
+		 runGroupName = %SCENARIO_NAME
+		 runGroupExit = false
+		 replacementChar = %
+
+scenarioConfig = [ScenarioOptions]
+		 _runObj = QUALITY
+		 intraInstanceObj = null
+		 interInstanceObj = MEAN
+		limitOptions = [TerminationCriteriaOptions]
+				 tunerTimeout = 2147483647
+				 numIterations = 2147483647
+				 runtimeLimit = 2147483647
+				 totalNumRunsLimit = 100
+				 countSMACTimeAsTunerTime = true
+				 challengeIncumbentAttempts = 1000
+				 fileToWatch = null
+
+		instanceOptions = [ProblemInstanceOptions]
+				 instanceFile = null
+				 instanceFeatureFile = null
+				 testInstanceFile = null
+				 checkInstanceFilesExist = false
+				 useInstances = false
+				 instanceSuffix = null
+				 testInstanceSuffix = null
+				 ignoreFeatures = false
+
+		 scenarioFile = /home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities/../Scripts/plasticSimulation_confFLYCOP_scenario_v2.txt
+		 outputDirectory = /home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities/smac-output
+		 invalidScenarioReason = null
+		algoExecOptions = [AlgorithmExecutionOptions]
+				 algoExec = python3 -W ignore ../Scripts/plasticSimulation_wrapperFLYCOP_v2.py
+				 algoExecDir = /home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities
+				 deterministic = true
+				 cutoffTime = 1.7976931348623157E308
+				 cutoffLength = -1.0
+				 additionalContext = {}
+				taeOpts = [TargetAlgorithmEvaluatorOptions]
+						 targetAlgorithmEvaluator = CLI
+						 abortOnCrash = false
+						 abortOnFirstRunCrash = true
+						 retryCount = 0
+						 cacheRuns = false
+						 cacheDebug = false
+						 useDynamicCappingExclusively = false
+						 reportStrictlyIncreasingRuntimes = false
+						 boundRuns = false
+						 maxConcurrentAlgoExecs = 1
+						 exitOnFailure = false
+						 runHashCodeFile = null
+						 leakMemory = false
+						 leakMemoryAmount = 1024
+						 verifySAT = null
+						 checkSATConsistency = true
+						 checkSATConsistencyException = true
+						 callObserverBeforeCompletion = true
+						prePostOptions = [PrePostCommandOptions]
+								 preCommand = null
+								 postCommand = null
+								 exceptionOnError = false
+								 logOutput = true
+								 directory = /home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities/.
+
+						 checkResultOrderConsistent = false
+						 skipOutstandingEvaluationsTAE = false
+						 logRequestResponses = false
+						 logRequestResponsesRCOnly = false
+						 trackRunsScheduled = false
+						 trackRunsScheduledResolution = 1.0
+						 uncleanShutdownCheck = true
+						 killCaptimeExceedingRun = true
+						 killCaptimeExceedingRunFactor = 10.0
+						 checkRunConfigsUnique = true
+						 checkRunConfigsUniqueException = true
+						 observeWalltimeIfNoRuntime = true
+						 observeWalltimeScale = 0.95
+						 observeWalltimeDelay = 5.0
+						 synchronousObserver = true
+						 taeDefaults = /home/iodmc/.aeatk/tae.opt
+						ttaedo = [TransformTargetAlgorithmEvaluatorDecoratorOptions]
+								 transform = false
+								 transformValidValuesOnly = true
+								 SAT_runtime_transform = R
+								 SAT_quality_transform = Q
+								 UNSAT_runtime_transform = R
+								 UNSAT_quality_transform = Q
+								 TIMEOUT_runtime_transform = R
+								 TIMEOUT_quality_transform = Q
+								 other_runtime_transform = R
+								 other_quality_transform = Q
+
+						tForkOptions = [ForkingTargetAlgorithmEvaluatorDecoratorOptions]
+								 forkToTAE = null
+								fPolicyOptions = [ForkingTargetAlgorithmEvaluatorDecoratorPolicyOptions]
+										 fPolicy = null
+										 duplicateOnSlaveQuickTimeout = 5
+
+
+						 fileToWatch = null
+						 warnIfNoResponseFromTAE = 120
+						 taeStopProcessingOnShutdown = true
+						 filecache = false
+						 fileCacheSource = /home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities/./runcache
+						 fileCacheOutput = /home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities/./runcache
+						 fileCacheCrashOnMiss = false
+						 transformCrashedQuality = true
+						 transformCrashedQualityValue = 1.0E9
+						 filterZeroCutoffRuns = true
+
+				paramFileDelegate = [ParamConfigurationSpaceOptions]
+						 paramFile = plasticSimulation_confFLYCOP_params_v2.pcs
+						 searchSubspace = null
+						 searchSubspaceFile = null
+						 continuousNeighbours = 4
+
+
+
+seedOptions = [SeedOptions]
+		 seedOffset = 0
+		 numRun = 123
+		 initialSeedMap = {}
+
+ smacDefaults = /home/iodmc/.aeatk/smac.opt
+stateOpts = [StateFactoryOptions]
+		 stateSerializer = LEGACY
+		 statedeSerializer = LEGACY
+		 restoreStateFrom = null
+		 restoreIteration = null
+		 restoreScenario = null
+		 cleanOldStatesOnSuccess = true
+		 saveContextWithState = true
+
+trackingOptions = [ParamConfigurationOriginTrackingOptions]
+		 configTracking = false
+
+validationOptions = [ValidationOptions]
+		 maxTimestamp = -1.0
+		 minTimestamp = 0.0
+		 multFactor = 2.0
+		 numberOfTestInstances = 2147483647
+		 numberOfTestSeedsPerInstance = 1000
+		 numberOfValidationRuns = 1
+		 outputFileSuffix = 
+		 saveStateFile = false
+		 useWallClockTime = true
+		 validateAll = false
+		 validateOnlyIfTunerTimeReached = 0.0
+		 validateOnlyIfWallTimeReached = 0.0
+		 validateOnlyLastIncumbent = true
+		 validationHeaders = true
+		 validationRoundingMode = UP
+
+warmStartOptions = [WarmStartOptions]
+		 warmStartStateFrom = null
+		 restoreIteration = 2147483647
+
+ validationSeed = 0
+ saveRunsEveryIteration = false
+ stateQuickSaves = true
+ shutdownTAEWhenDone = true
+ validationCores = null
+ shareModelMode = false
+ shareRunDataFrequency = 300
+ shareModeModeTAE = true
+ writeRunData = true
+ defaultHandler = USE_ALL
+ sharedModeModeAssymetricMode = false
+
+[AnalyticTargetAlgorithmEvaluatorOptions]
+ simulateDelay = false
+ cores = 0
+ observerFrequency = 100
+ func = CAMELBACK
+ scaleDelay = 1.0
+
+[BlackHoleTargetAlgorithmEvaluatorOptions]
+ warnings = true
+
+[CommandLineTargetAlgorithmEvaluatorOptions]
+ observerFrequency = 500
+ concurrentExecution = true
+ cores = 1
+ logAllCallStrings = false
+ logAllResultLines = false
+ logAllCallsAndResultLines = false
+ logAllProcessOutput = false
+ listenForUpdates = true
+ paramArgumentsContainQuotes = false
+ pgEnvKillCommand = null
+ pgNiceKillCommand = bash -c "kill -s TERM -%pid"
+ pgForceKillCommand = bash -c "kill -s KILL -%pid"
+ procNiceKillCommand = kill -s TERM %pid
+ procForceKillCommand = kill -s KILL %pid
+ smacDefaults = /home/iodmc/.aeatk/cli-tae.opt
+
+[ConstantTargetAlgorithmEvaluatorOptions]
+ runResult = SAT
+ runtime = 1.0
+ quality = 0.0
+ runlength = 0.0
+ additionalRunData = 
+
+[IPCTargetAlgorithmEvaluatorOptions]
+ persistent = false
+ ipcMechanism = UDP
+ encodingMechanism = CALL_STRING
+ remoteHost = 127.0.0.1
+ remotePort = 5050
+ udpPacketSize = 4096
+ localPort = 0
+ execScript = null
+ execScriptOutput = false
+ poolConnections = false
+ ipcDefaults = /home/iodmc/.aeatk/ipc-tae.opt
+ asyncThreads = 8
+
+[PreloadedResponseTargetAlgorithmEvaluatorOptions]
+ preloadedResponses = 
+ runLength = -1.0
+ quality = 0.0
+ additionalRunData = 
+
+[RandomResponseTargetAlgorithmEvaluatorOptions]
+ simulateDelay = false
+ additionalRunData = 
+ cores = 0
+ maxResponse = 10.0
+ minResponse = 0.0
+ observerFrequency = 500
+ trendCoefficient = 0.0
+ seed = 1616322425253
+ persistent = false
+ scaleDelay = 1.0
+
+
+06:27:06.432 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - SMAC started at: Mar 21, 2021, 6:27:06 AM. Minimizing mean quality.
+06:29:09.524 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3916551032, 0, -1, 0.0
+ 
+06:29:10.305 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - First incumbent: config 1 (internal ID: 0x0005), with mean quality: -2.3916551032; estimate based on 1 runs.
+06:29:10.318 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Sample call for new incumbent config 1 (internal ID: 0x0005): 
+cd /home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities; python3 -W ignore ../Scripts/plasticSimulation_wrapperFLYCOP_v2.py no_instance 0 1.7976931348623157E308 2147483647 -1 -param_1_biomass1 '0.1' -param_2_biomass2 '0.1' -param_3_gly1 '-1' -param_4_gly2 '-15'  
+06:31:28.745 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4109872041, 0, -1, 0.0
+ 
+06:31:29.713 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Incumbent changed to: config 2 (internal ID: 0x4AAB), with mean quality: -2.4109872041; estimate based on 1 runs.
+06:31:29.713 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Sample call for new incumbent config 2 (internal ID: 0x4AAB): 
+cd /home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities; python3 -W ignore ../Scripts/plasticSimulation_wrapperFLYCOP_v2.py no_instance 0 1.7976931348623157E308 2147483647 -1 -param_1_biomass1 '0.07' -param_2_biomass2 '0.07' -param_3_gly1 '-0.8' -param_4_gly2 '-11'  
+06:33:19.683 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.396832848, 0, -1, 0.0
+ 
+06:35:35.372 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4035093479, 0, -1, 0.0
+ 
+06:37:48.656 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3824230822, 0, -1, 0.0
+ 
+06:39:57.968 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.345443666, 0, -1, 0.0
+ 
+06:41:40.865 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3916551032, 0, -1, 0.0
+ 
+06:43:54.513 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3162391973, 0, -1, 0.0
+ 
+06:45:28.912 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3916551032, 0, -1, 0.0
+ 
+06:47:44.121 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3162391973, 0, -1, 0.0
+ 
+06:49:30.080 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4125199971, 0, -1, 0.0
+ 
+06:49:30.513 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Incumbent changed to: config 11 (internal ID: 0x7561), with mean quality: -2.4125199971; estimate based on 1 runs.
+06:49:30.514 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Sample call for new incumbent config 11 (internal ID: 0x7561): 
+cd /home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities; python3 -W ignore ../Scripts/plasticSimulation_wrapperFLYCOP_v2.py no_instance 0 1.7976931348623157E308 2147483647 -1 -param_1_biomass1 '0.08' -param_2_biomass2 '0.1' -param_3_gly1 '-1.2' -param_4_gly2 '-13'  
+06:50:56.549 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3975158079, 0, -1, 0.0
+ 
+06:52:40.312 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4035093479, 0, -1, 0.0
+ 
+06:54:10.705 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+06:54:11.176 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Incumbent changed to: config 14 (internal ID: 0xEB76), with mean quality: -2.4325066818; estimate based on 1 runs.
+06:54:11.177 [main] INFO  c.u.c.b.s.c.SequentialModelBasedAlgorithmConfiguration - Sample call for new incumbent config 14 (internal ID: 0xEB76): 
+cd /home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities; python3 -W ignore ../Scripts/plasticSimulation_wrapperFLYCOP_v2.py no_instance 0 1.7976931348623157E308 2147483647 -1 -param_1_biomass1 '0.08' -param_2_biomass2 '0.08' -param_3_gly1 '-1.2' -param_4_gly2 '-11'  
+06:55:57.960 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3992628366, 0, -1, 0.0
+ 
+06:57:31.404 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.419960454, 0, -1, 0.0
+ 
+06:59:06.900 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3788173557, 0, -1, 0.0
+ 
+07:00:27.108 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4186031276, 0, -1, 0.0
+ 
+07:01:34.464 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3628429084, 0, -1, 0.0
+ 
+07:03:14.673 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4035093479, 0, -1, 0.0
+ 
+07:04:48.305 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4109872041, 0, -1, 0.0
+ 
+07:06:13.864 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4109872041, 0, -1, 0.0
+ 
+07:07:23.452 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3518993685, 0, -1, 0.0
+ 
+07:08:31.339 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3628429084, 0, -1, 0.0
+ 
+07:10:03.366 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.396832848, 0, -1, 0.0
+ 
+07:11:23.361 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3939123769, 0, -1, 0.0
+ 
+07:12:35.953 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.396832848, 0, -1, 0.0
+ 
+07:14:06.684 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4035093479, 0, -1, 0.0
+ 
+07:15:14.568 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3518993685, 0, -1, 0.0
+ 
+07:16:26.592 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3628429084, 0, -1, 0.0
+ 
+07:17:38.090 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.396832848, 0, -1, 0.0
+ 
+07:18:55.341 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3999528226, 0, -1, 0.0
+ 
+07:20:12.886 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4186031276, 0, -1, 0.0
+ 
+07:22:01.889 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3576275884, 0, -1, 0.0
+ 
+07:23:35.640 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3973119098, 0, -1, 0.0
+ 
+07:25:17.112 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3788173557, 0, -1, 0.0
+ 
+07:26:35.972 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3999528226, 0, -1, 0.0
+ 
+07:28:28.156 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3162391973, 0, -1, 0.0
+ 
+07:29:46.610 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.419960454, 0, -1, 0.0
+ 
+07:31:44.014 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3162391973, 0, -1, 0.0
+ 
+07:33:04.144 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3999528226, 0, -1, 0.0
+ 
+07:34:33.968 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3797372766, 0, -1, 0.0
+ 
+07:35:58.088 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.419960454, 0, -1, 0.0
+ 
+07:37:29.101 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3975158079, 0, -1, 0.0
+ 
+07:39:15.624 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4109872041, 0, -1, 0.0
+ 
+07:40:41.326 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.396832848, 0, -1, 0.0
+ 
+07:42:12.124 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3824230822, 0, -1, 0.0
+ 
+07:43:39.360 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3973119098, 0, -1, 0.0
+ 
+07:44:59.711 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3975158079, 0, -1, 0.0
+ 
+07:46:21.336 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.419960454, 0, -1, 0.0
+ 
+07:47:37.280 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.396832848, 0, -1, 0.0
+ 
+07:49:11.946 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3824230822, 0, -1, 0.0
+ 
+07:50:32.270 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3975158079, 0, -1, 0.0
+ 
+07:52:30.483 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3346065545, 0, -1, 0.0
+ 
+07:54:06.401 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4035093479, 0, -1, 0.0
+ 
+07:55:28.031 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3939123769, 0, -1, 0.0
+ 
+07:56:56.002 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+07:58:29.853 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4035093479, 0, -1, 0.0
+ 
+08:00:04.608 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4035093479, 0, -1, 0.0
+ 
+08:01:46.541 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+08:03:19.339 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+08:05:24.120 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3080680575, 0, -1, 0.0
+ 
+08:07:04.548 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4035093479, 0, -1, 0.0
+ 
+08:08:17.232 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3628429084, 0, -1, 0.0
+ 
+08:09:39.676 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.419960454, 0, -1, 0.0
+ 
+08:11:06.850 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.345443666, 0, -1, 0.0
+ 
+08:12:45.644 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4125199971, 0, -1, 0.0
+ 
+08:14:20.573 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.345443666, 0, -1, 0.0
+ 
+08:16:11.807 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3992628366, 0, -1, 0.0
+ 
+08:17:36.639 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.345443666, 0, -1, 0.0
+ 
+08:18:57.219 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3939123769, 0, -1, 0.0
+ 
+08:20:19.768 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3797372766, 0, -1, 0.0
+ 
+08:22:09.096 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3824230822, 0, -1, 0.0
+ 
+08:24:03.724 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3832396166, 0, -1, 0.0
+ 
+08:25:40.121 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.345443666, 0, -1, 0.0
+ 
+08:27:26.570 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3832396166, 0, -1, 0.0
+ 
+08:29:09.104 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+08:30:45.929 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3973119098, 0, -1, 0.0
+ 
+08:32:14.190 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.419960454, 0, -1, 0.0
+ 
+08:34:13.656 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3162391973, 0, -1, 0.0
+ 
+08:35:38.680 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+08:37:20.732 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3992628366, 0, -1, 0.0
+ 
+08:38:45.665 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+08:40:15.361 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+08:41:38.256 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.419960454, 0, -1, 0.0
+ 
+08:43:04.193 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3975158079, 0, -1, 0.0
+ 
+08:44:28.460 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3939123769, 0, -1, 0.0
+ 
+08:45:56.643 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+08:47:27.059 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.345443666, 0, -1, 0.0
+ 
+08:48:53.990 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+08:50:18.260 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3939123769, 0, -1, 0.0
+ 
+08:51:50.376 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+08:53:03.784 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3518993685, 0, -1, 0.0
+ 
+08:54:34.656 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+08:56:02.524 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+08:57:26.605 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+08:59:06.757 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3824230822, 0, -1, 0.0
+ 
+09:00:39.108 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4325066818, 0, -1, 0.0
+ 
+09:02:04.356 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.4109872041, 0, -1, 0.0
+ 
+09:03:52.432 [CLI TAE (Master Thread - #0)] WARN  c.u.c.b.a.t.b.c.CommandLineAlgorithmRun - Too many fields were encounted (expected 5 or 6) when parsing line (Additional Run Data cannot have commas): Result of algorithm run: SAT, 0, 0, -2.3576275884, 0, -1, 0.0
+ 
+09:03:53.236 [main] INFO  c.u.c.b.a.e.h.LogRuntimeStatistics - *****Developer Statistics*****
+ Count: 11
+ Incumbent ID: 14 (internal ID:0xEB76)
+ Number of PISPs for Incumbent: 1
+ Number of Instances for Incumbent: 1
+ Number of Configurations Run: 100
+ Performance of the Incumbent: -2.433
+ Configuration Time Budget used: 38.91 s (0%)
+ Configuration Time Budget remaining: 2.15E9 s
+ Wall-clock Time Budget used: 9406.81 s (0%)
+ Wall-clock Time Budget remaining: 2.15E9 s
+ Algorithm Runs used: 100.00  (100%)
+ Algorithm Runs remaining: 0.00 
+ Model/Iteration used: 10.00  (0%)
+ Model/Iteration remaining: 2.15E9 
+ Sum of Target Algorithm Execution Times (treating minimum value as 0.1): 10.000 s
+ CPU time of Configurator: 28.910 s
+ User time of Configurator: 28.910 s
+ Outstanding Runs on Target Algorithm Evaluator: 0
+ Outstanding Requests on Target Algorithm Evaluator: 0
+ Total Reported Algorithm Runtime: 0.000 s
+ Sum of Measured Wallclock Runtime: 9349.025 s
+ Max Memory: 990 MB
+ Total Java Memory: 60 MB
+ Free Java Memory: 8 MB
+ * PISP count is roughly the number of runs, but doesn't included redundant runs on the same problem instance & seed
+09:03:53.247 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - 
+=======================================================================================
+SMAC has finished. Reason: algorithm run limit (100 runs) has been reached.   
+Total number of runs performed: 100, total configurations tried: 100.
+Total CPU time used: 39 s, total wallclock time used: 9407 s.
+SMAC's final incumbent: config 14 (internal ID: 0xEB76), with estimated mean quality: -2.4325066818, based on 1 run(s) on 1 training instance(s).
+Sample call for this final incumbent:
+cd /home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities; python3 -W ignore ../Scripts/plasticSimulation_wrapperFLYCOP_v2.py no_instance 0 1.7976931348623157E308 2147483647 -1 -param_1_biomass1 '0.08' -param_2_biomass2 '0.08' -param_3_gly1 '-1.2' -param_4_gly2 '-11'
+=======================================================================================
+09:03:53.252 [main] INFO  c.u.c.b.smac.executors.SMACExecutor - 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Additional information about run 123 in:/home/iodmc/Documents/FLYCOP-modif/MicrobialCommunities/smac-output/plasticSimulation_confFLYCOP_scenario_v2
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
