@@ -13,12 +13,12 @@
 import sys
 import importlib
 sys.path.append('../../Scripts')
-import plasticDegradationSimulationEstrategy3 as flycop
+import plasticDegradationSimulationEstrategy3
 
 biomass1 = float(sys.argv[1])
 biomass2 = float(sys.argv[2])
-gly=int(sys.argv[3])
-tpha = int(sys.argv[4])
+gly1= float(sys.argv[3]) ## gly a gly1; int() a float()
+gly2 = float(sys.argv[4]) ## tpha a a gly2; int() a float()
 fitness = sys.argv[5]
 
-flycop.Flycop(tpha,biomass1,biomass2,gly,fitness,'./IndividualRunsResults/',2)
+plasticDegradationSimulationEstrategy3.Flycop(gly2,biomass1,biomass2,gly1,fitness,'./IndividualRunsResults/',2)

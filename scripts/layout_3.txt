@@ -1,4 +1,4 @@
-model_file	plasticDegradationEstrategy3-dPCA.cmd	defaultModel-3.cmd
+model_file	/home/iodmc/Documents/FLYCOP-modif/Scripts/plasticDegradationEstrategy3-dPCA_10.cmd	/home/iodmc/Documents/FLYCOP-modif/Scripts/defaultModel-3-consumoSeparado_10.cmd
 	model_world
 		grid_size	1	1
 		world_media

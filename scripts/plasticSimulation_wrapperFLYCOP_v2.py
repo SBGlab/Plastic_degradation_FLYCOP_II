@@ -44,8 +44,10 @@ seed = int(sys.argv[5])
 # Reading this case study parameters to optimize by SMAC
 biomass1 = float(sys.argv[7])
 biomass2 = float(sys.argv[9])
-gly = float(sys.argv[11])
-tpha = float(sys.argv[13])
+gly1 = float(sys.argv[11]) #gly
+gly2 = float(sys.argv[13]) #tpha
+
+#si añado una nueva variable el sys.argv tiene que ser impar para el valor y par para el nombre
 
 # Copy the template directory
 if (os.path.exists(dst)):
@@ -64,7 +66,7 @@ if not os.path.exists(dirPlots):
     
 
 # At a higher level: Running the wrapper-script in SMAC:
-avgfitness,sdfitness=plasticDegradationSimulationEstrategy2.Flycop(tpha, biomass1, biomass2,gly,fitFunc,dirPlots,2)
+avgfitness,sdfitness=plasticDegradationSimulationEstrategy3.Flycop(gly2, biomass1, biomass2,gly1,fitFunc,dirPlots,2)
 
 
 # Print wrapper Output:
@@ -74,3 +76,5 @@ print('Result of algorithm run: SAT, 0, 0, '+str(1-avgfitness)+', 0, '+str(seed)
 # Remove the temporal dir for this run result
 os.chdir('..')
 shutil.rmtree(dst)
+
+

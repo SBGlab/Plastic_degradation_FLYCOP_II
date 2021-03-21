@@ -23,7 +23,7 @@ cd smac-output/${domainName}_confFLYCOP_scenario_v${id}/state-run${seed}
 # 1.- Get summary statistics file $nRuns SMAC configurations 
 tail -n${nRuns} runs_and_results-it*.csv | awk -F, '{print NR","1-$4}' > $dataAnalysisDir/fitness.csv
 paste -d, paramstrings-it*.txt $dataAnalysisDir/fitness.csv > $dataAnalysisDir/paramstrings_withFitness.csv
-echo "biomass1\tbiomass2\tgly\ttpha\tfitness" > $dataAnalysisDir/tableParamWithFitness.csv
+echo "biomass1\tbiomass2\tgly1\tgly2\tfitness" > $dataAnalysisDir/tableParamWithFitness.csv
 cut -d, -f1-6,8 $dataAnalysisDir/paramstrings_withFitness.csv | awk 'BEGIN{FS="[=,]"} {print $2"\t"$4"\t"$6"\t"$8"\t"$10"\t"$12"\t"$13}' | sed "s/'//g" | sed "s/-999999999/0/">> $dataAnalysisDir/tableParamWithFitness.csv
 egrep "WARN.*Result of algorithm run|ERROR.*The following algorithm call failed" ../log-warn${seed}.txt | awk -F'Result of algorithm run: ' '{if($2==""){print "X,X,X,1,X,X,1"}else{print $2}}' | cut -d, -f4,7 | awk -F, '{print 1-$1","$2}' > $dataAnalysisDir/avgfitnessAndStdev.txt
 # Retrieve configuration

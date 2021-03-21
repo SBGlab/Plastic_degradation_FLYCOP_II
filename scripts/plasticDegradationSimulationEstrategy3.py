@@ -51,25 +51,24 @@ def initialize_models(file, mutations=False, percentage=None):
             del(final_model)
         j = j+1
         
-def model_modifications(tpha, model_id, gly=None):
+def model_modifications(gly2, model_id, gly1): #Quitamos gly=None
     # Single GEMs parameter modifications
 
     # 1.1.- Establish modifications in model  
-    model1=c.model('/home/iodmc/Documents/Plastic_degradation_FLYCOP_II/scripts/plasticDegradationEstrategy3-dPCA_10.cmd')
+    model1=c.model('/home/iodmc/Documents/FLYCOP-modif/Scripts/plasticDegradationEstrategy3-dPCA_10.cmd')
     #You can change the bounds of a reaction using the change_bounds(reaction name, lower bound, upper bound) method
     #You can create certain conditions for your simulation
-    model1.change_bounds('EX_glycol_e', gly, 0)
-    model1.change_bounds('EX_tpha_e',tpha,0)
+    model1.change_bounds('EX_glycol_e', gly1, 0)
     model1.change_bounds('EX_o2_e',-18.5,0)
 
     model1.id=model_id[0]
     model1.write_comets_model()
     del(model1)
      # 1.2.- Establish modifications in model 2
-    model2=c.model('/home/iodmc/Documents/Plastic_degradation_FLYCOP_II/scripts/defaultModel-3-consumoSeparado_4.cmd')
-    model2.change_bounds('EX_glycol_e', gly, 0)
+    model2=c.model('/home/iodmc/Documents/FLYCOP-modif/Scripts/defaultModel-3-consumoSeparado_10.cmd')
+    model2.change_bounds('EX_glycol_e', gly2, 0)
     model2.change_bounds('EX_o2_e',-18.5,0)
-    model2.change_bounds('EX_34dhbz_e',-5,0)
+    model2.change_bounds('EX_34dhbz_e',-5,0) #consumo de PCA -> cepa 2
     
     model2.id=model_id[1]
     model2.write_comets_model()        
@@ -261,7 +260,7 @@ def calculate_uptake(comets,layout, met):
     return uptakeMet
 
 
-def Flycop(tpha,biomass1,biomass2,gly,fitFunc='Yield', dirPlot='', repeat=10, params_package=None, params_global=None):
+def Flycop(gly2,biomass1,biomass2,gly1,fitFunc='Yield', dirPlot='', repeat=10, params_package=None, params_global=None):
     """Primarily function of the simulation
     You need to add to it the parameters to adjust.
     You need to fill these variables below(layout, model_id, model, wgMet, metabolites, strains) with your information
@@ -273,7 +272,7 @@ def Flycop(tpha,biomass1,biomass2,gly,fitFunc='Yield', dirPlot='', repeat=10, pa
     strains = list with the names of the strains you're working with
     simulationID = will be part of the filename for the results 
     metUptake = the metabolite you want to calculate the uptake of"""
-    layout_file='/home/iodmc/Documents/Plastic_degradation_FLYCOP_II/scripts/layout_4.txt'
+    layout_file='/home/iodmc/Documents/FLYCOP-modif/Scripts/layout_3.txt'
     model_id=['noPCADeg_tmp','default3_tmp']
     wgMet=0.16411
     metabolites=['tpha_e','glycol_e','34dhbz_e','C80aPHA_e','o2_e']
@@ -282,9 +281,9 @@ def Flycop(tpha,biomass1,biomass2,gly,fitFunc='Yield', dirPlot='', repeat=10, pa
     
     if not(os.path.exists('IndividualRunsResults')):
         os.makedirs('IndividualRunsResults')
-    if not(os.path.exists('/home/iodmc/Documents/Plastic_degradation_FLYCOP_II/scripts/noPCADeg_tmp.cmd')):
+    if not(os.path.exists('/home/iodmc/Documents/FLYCOP-modif/Scripts/noPCADeg_tmp.cmd')):
         
-        model_modifications(tpha, model_id, gly)
+        model_modifications(gly2, model_id, gly1)
         
     totfitness=0
     sumTotBiomass=0
@@ -352,7 +351,7 @@ def Flycop(tpha,biomass1,biomass2,gly,fitFunc='Yield', dirPlot='', repeat=10, pa
         file='IndividualRunsResults/'+'biomass_vs_'+x+'_template_plot.pdf'        
         shutil.copy('biomass_vs_'+x+'_template_plot.pdf',file)
         if(dirPlot != ''):
-            file2=dirPlot+'biomass_vs_tpha_'+'_run'+str(i)+'_'+str(round(fitness,6))+'_'+str(biomass1)+'_'+str(biomass2)+'_'+str(gly)+'_'+str(tpha)+'.pdf'
+            file2=dirPlot+'biomass_vs_tpha_'+'_run'+str(i)+'_'+str(round(fitness,6))+'_'+str(biomass1)+'_'+str(biomass2)+'_'+str(gly1)+'_'+str(gly2)+'.pdf'
             shutil.copy(file,file2)
         file='IndividualRunsResults/'+'total_biomass_log_run'+str(i)+'.txt'
         shutil.move('Total_biomass_log_template.txt',file)
@@ -368,10 +367,10 @@ def Flycop(tpha,biomass1,biomass2,gly,fitFunc='Yield', dirPlot='', repeat=10, pa
     
     print("Fitness_function\tconfiguration\tfitness\tsd\tavg.Biomass\tavg.Yield\tendCycle")
                     
-    print(fitFunc+"\t"+str(tpha)+','+str(gly)+','+str(biomass1)+','+str(biomass2)+','+"\t"+str(round(avgfitness,6))+"\t"+str(sdfitness)+"\t"+str(round(avgBiomass,6))+"\t"+str(round(avgYield,6))+"\t"+str(endCycle))
+    print(fitFunc+"\t"+str(gly2)+','+str(gly1)+','+str(biomass1)+','+str(biomass2)+','+"\t"+str(round(avgfitness,6))+"\t"+str(sdfitness)+"\t"+str(round(avgBiomass,6))+"\t"+str(round(avgYield,6))+"\t"+str(endCycle))
     with open(dirPlot+"configurationsResults"+fitFunc+".txt", "a") as myfile:
         myfile.write("Fitness_function\tconfiguration\tfitness\tsd\tavg.Biomass\tavg.Yield\tendCycle\n")
-        myfile.write(fitFunc+"\t"+str(tpha)+','+str(gly)+','+str(biomass1)+','+str(biomass2)+','+"\t"+str(round(avgfitness,6))+"\t"+str(sdfitness)+"\t"+str(round(avgBiomass,6))+"\t"+str(round(avgYield,6))+"\t"+str(endCycle)+"\n")
+        myfile.write(fitFunc+"\t"+str(gly2)+','+str(gly1)+','+str(biomass1)+','+str(biomass2)+','+"\t"+str(round(avgfitness,6))+"\t"+str(sdfitness)+"\t"+str(round(avgBiomass,6))+"\t"+str(round(avgYield,6))+"\t"+str(endCycle)+"\n")
   
     print("Avg.fitness(sd):\t"+str(avgfitness)+"\t"+str(sdfitness)+"\n")
     if(sdfitness>0.1):
@@ -384,3 +383,4 @@ def Flycop(tpha,biomass1,biomass2,gly,fitFunc='Yield', dirPlot='', repeat=10, pa
             pass
 
     return avgfitness,sdfitness
+
