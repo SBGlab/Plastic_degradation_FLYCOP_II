@@ -1,0 +1,4 @@
+param_1_biomass1 real [0.01,0.1] [0.1]
+param_2_biomass2 real [0.01,0.1] [0.1]
+param_3_gly1 real [0.1,12] [10]
+param_4_gly2 real [-12,-8] [-10]
