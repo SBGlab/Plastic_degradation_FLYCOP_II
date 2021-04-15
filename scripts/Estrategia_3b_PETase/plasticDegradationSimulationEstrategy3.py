@@ -55,18 +55,18 @@ def model_modifications(gly2, model_id, gly1): #Quitamos gly=None
     # Single GEMs parameter modifications
 
     # 1.1.- Establish modifications in model  
-    model1=c.model('/home/iodmc/Documents/FLYCOP/Scripts/plasticDegradationEstrategy3-PETase-dPCA_10.cmd')
+    model1=c.model('/home/iodmc/Documents/FLYCOP/Scripts/plasticDegradationEstrategy3b-PETase-dPCA.cmd')
     #You can change the bounds of a reaction using the change_bounds(reaction name, lower bound, upper bound) method
     #You can create certain conditions for your simulation
     model1.change_bounds('GLYCOLDHpp',0,gly1)
     model1.change_bounds('EX_o2_e',-18.5,0)
-    #model1.change_bounds('tpha_e',-5,0) #lo quitamos porque esta cepa ahora consume PET
+    model1.change_bounds('tpha_e',0,0) #lo quitamos porque esta cepa ahora consume PET
     
     model1.id=model_id[0]
     model1.write_comets_model()
     del(model1)
      # 1.2.- Establish modifications in model 2
-    model2=c.model('/home/iodmc/Documents/FLYCOP/Scripts/defaultModel-3-consumoSeparado.cmd')
+    model2=c.model('/home/iodmc/Documents/FLYCOP/Scripts/defaultModel-3-consumoSeparado-PETase.cmd')
     model2.change_bounds('EX_glycol_e', gly2, 0)
     model2.change_bounds('EX_o2_e',-18.5,0)
     model2.change_bounds('EX_34dhbz_e',-5,0) #consumo de PCA -> cepa 2
@@ -195,11 +195,11 @@ def end_simulation_cycle(df2,strains,params):
     The stop condition should be suitable for your simulation.
     """
     iniBiomass=float(df2.at[0,strains[0]])+float(df2.at[0, strains[1]])
-    totTpha=float(df2.at[0,'tpha_e'])
+    totPET=float(df2.at[0,'pet_e'])
     endCycle=params.all_params['maxCycles'] #total of cycles
         
        
-    return iniBiomass, endCycle, totTpha
+    return iniBiomass, endCycle, totPET
 
 def biomass_yield(df2,endCycle, strains):
     # Function that compute final biomass as the maximum biomass of each strain.
@@ -273,10 +273,10 @@ def Flycop(gly2,biomass1,biomass2,gly1,fitFunc='Yield', dirPlot='', repeat=10, p
     strains = list with the names of the strains you're working with
     simulationID = will be part of the filename for the results 
     metUptake = the metabolite you want to calculate the uptake of"""
-    layout_file='/home/iodmc/Documents/FLYCOP/Scripts/layout_3.txt'
+    layout_file='/home/iodmc/Documents/FLYCOP/Scripts/layout_3b.txt'
     model_id=['noPCADeg_tmp','default3_tmp']
     wgMet=0.16411
-    metabolites=['tpha_e','glycol_e','34dhbz_e','C80aPHA_e','o2_e']
+    metabolites=['tpha_e','pet_e','glycol_e','34dhbz_e','C80aPHA_e','o2_e']
     strains=['Pputida_no-pca', 'Pputida_default-3']
     metUptake = metabolites[0]
     
@@ -352,7 +352,7 @@ def Flycop(gly2,biomass1,biomass2,gly1,fitFunc='Yield', dirPlot='', repeat=10, p
         file='IndividualRunsResults/'+'biomass_vs_'+x+'_template_plot.pdf'        
         shutil.copy('biomass_vs_'+x+'_template_plot.pdf',file)
         if(dirPlot != ''):
-            file2=dirPlot+'biomass_vs_tpha_'+'_run'+str(i)+'_'+str(round(fitness,6))+'_'+str(biomass1)+'_'+str(biomass2)+'_'+str(gly1)+'_'+str(gly2)+'.pdf'
+            file2=dirPlot+'biomass_vs_pet_'+'_run'+str(i)+'_'+str(round(fitness,6))+'_'+str(biomass1)+'_'+str(biomass2)+'_'+str(gly1)+'_'+str(gly2)+'.pdf'
             shutil.copy(file,file2)
         file='IndividualRunsResults/'+'total_biomass_log_run'+str(i)+'.txt'
         shutil.move('Total_biomass_log_template.txt',file)

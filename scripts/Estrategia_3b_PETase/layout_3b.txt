@@ -1,4 +1,4 @@
-model_file	/home/iodmc/Documents/FLYCOP/Scripts/plasticDegradationEstrategy3-PETase-dPCA_10.cmd	/home/iodmc/Documents/FLYCOP/Scripts/defaultModel-3-consumoSeparado.cmd
+model_file	/home/iodmc/Documents/FLYCOP/Scripts/plasticDegradationEstrategy3b-PETase-dPCA.cmd	/home/iodmc/Documents/FLYCOP/Scripts/defaultModel-3-consumoSeparado-PETase.cmd
 	model_world
 		grid_size	1	1
 		world_media
@@ -20,8 +20,8 @@ model_file	/home/iodmc/Documents/FLYCOP/Scripts/plasticDegradationEstrategy3-PET
 			h2o_e	1000.0
 			cu2_e	1000.0
 			ca2_e	100.0
-			tpha_e	10.0
-			glycol_e	10.0
+			tpha_e	0.0
+			glycol_e	0.0
 			cbl1_e	0.001
 			o_xyl_e	0.0
 			meoh_e	0.0
@@ -140,7 +140,7 @@ model_file	/home/iodmc/Documents/FLYCOP/Scripts/plasticDegradationEstrategy3-PET
 			phedca_e	0.0
 			phe__L_e	0.0
 			phe__D_e	0.0
-			pet_e	0.0
+			pet_e	10.0
 			pentso3_e	0.0
 			peamn_e	0.0
 			pea_e	0.0
