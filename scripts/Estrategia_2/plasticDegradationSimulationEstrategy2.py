@@ -55,7 +55,7 @@ def model_modifications(tpha,model_id, gly=None, dhbz=None):
     # Single GEMs parameter modifications
 
     # 1.1.- Establish modifications in model  
-    model1=c.model('/home/iodmc/Documents/FLYCOP-strategy2/Scripts/plasticDegradationEstrategy2-dEG_strategy2.cmd')
+    model1=c.model('/home/iodmc/Documents/FLYCOP/Scripts/plasticDegradationEstrategy2-dEG_strategy2.cmd')
     #You can change the bounds of a reaction using the change_bounds(reaction name, lower bound, upper bound) method
     #You can create certain conditions for your simulation
     model1.change_bounds('EX_tpha_e', tpha, 0)
@@ -64,7 +64,7 @@ def model_modifications(tpha,model_id, gly=None, dhbz=None):
     model1.write_comets_model()
     del(model1)
      # 1.2.- Establish modifications in model 2
-    model2=c.model('/home/iodmc/Documents/FLYCOP-strategy2/Scripts/defaultModel_strategy2.cmd')
+    model2=c.model('/home/iodmc/Documents/FLYCOP/Scripts/defaultModel_strategy2.cmd')
     model2.change_bounds('EX_glycol_e', gly, 0)
     model2.change_bounds('EX_o2_e', -15, 0)
     model2.id=model_id[1]
@@ -271,7 +271,7 @@ def Flycop(tpha,biomass1,biomass2, gly, fitFunc='Yield', dirPlot='', repeat=10, 
     strains = list with the names of the strains you're working with
     simulationID = will be part of the filename for the results 
     metUptake = the metabolite you want to calculate the uptake of"""
-    layout_file='/home/iodmc/Documents/FLYCOP-strategy2/Scripts/layout_2.txt'
+    layout_file='/home/iodmc/Documents/FLYCOP/Scripts/layout_2.txt'
     model_id=['noGlycerolDeg_tmp','default_tmp']
     wgMet=0.16411
     metabolites=['tpha_e','glycol_e','C80aPHA_default_e','C80aPHA_e','o2_e']
@@ -280,7 +280,7 @@ def Flycop(tpha,biomass1,biomass2, gly, fitFunc='Yield', dirPlot='', repeat=10, 
     
     if not(os.path.exists('IndividualRunsResults')):
         os.makedirs('IndividualRunsResults')
-    if not(os.path.exists('/home/iodmc/Documents/FLYCOP-strategy2/Scripts/'+str(model_id[0])+'.cmd')):
+    if not(os.path.exists('/home/iodmc/Documents/FLYCOP/Scripts/'+str(model_id[0])+'.cmd')):
         
         model_modifications(tpha,model_id, gly)
         
