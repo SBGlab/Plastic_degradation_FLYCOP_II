@@ -16,8 +16,10 @@ data=read.table("data.txt",sep="\t",header=TRUE,row.names = 1)
 
 ### Correlation matrix
 
-The groups are defined by: \* PHA\>3.5 = HIGH \* PHA\<3.5 AND PHA \> 3.0
-= NORMAL \* PHA\<3.0 = LOW
+The groups are defined by: 
+* PHA > 3.5 = HIGH
+* PHA < 3.5 AND PHA > 3.0 = NORMAL
+* PHA < 3.0 = LOW
 <img src="analysis_files/figure-gfm/unnamed-chunk-2-1.png" width="200%" height="200%" />
 
 ### Correlation plot
